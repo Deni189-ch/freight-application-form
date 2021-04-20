@@ -1,0 +1,27 @@
+$bgColor: rgba(255, 255, 255, 1);
+$bgColorBody: #343539;
+$bgFormColor: rgba(75, 75, 79, 1);
+$bgColorPointer: rgba(239, 72, 62, 1);
+$bgColorError: #a52a2a8c;
+
+
+@mixin adaptive($device) {
+
+  @if ($device == smartfon) {
+    @media (max-width: 450px) {
+      @content;
+    }
+  } @else if ($device == iPads) {
+    @media (max-width: 660px) {
+      @content;
+    }
+  } @else if ($device == tablet) {
+    @media (max-width: 890px) {
+      @content;
+    }
+  } @else if ($device == notebook) {
+    @media (max-width: 1135px) {
+      @content;
+    }
+  }
+}

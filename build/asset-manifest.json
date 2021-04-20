@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a8828c6b.chunk.css",
+    "main.js": "/static/js/main.18559fd7.chunk.js",
+    "main.js.map": "/static/js/main.18559fd7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.285d9cc7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.285d9cc7.js.map",
+    "static/css/2.45f96635.chunk.css": "/static/css/2.45f96635.chunk.css",
+    "static/js/2.8949a1eb.chunk.js": "/static/js/2.8949a1eb.chunk.js",
+    "static/js/2.8949a1eb.chunk.js.map": "/static/js/2.8949a1eb.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.45f96635.chunk.css.map": "/static/css/2.45f96635.chunk.css.map",
+    "static/css/main.a8828c6b.chunk.css.map": "/static/css/main.a8828c6b.chunk.css.map",
+    "static/js/2.8949a1eb.chunk.js.LICENSE.txt": "/static/js/2.8949a1eb.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/Roboto-Regular.d535d388.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.285d9cc7.js",
+    "static/css/2.45f96635.chunk.css",
+    "static/js/2.8949a1eb.chunk.js",
+    "static/css/main.a8828c6b.chunk.css",
+    "static/js/main.18559fd7.chunk.js"
+  ]
+}

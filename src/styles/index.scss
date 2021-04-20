@@ -1,0 +1,15 @@
+@import "./mixin.scss";
+@import "../assets/fonts/fonts.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $bgColorBody;
+  font-family: 'Roboto-Regular';
+}
+
+

@@ -1,0 +1,163 @@
+@import "../../styles/mixin.scss";
+
+.ant-form {
+  padding: 40px 10px 10px 170px!important;
+  display: grid;
+}
+
+.transportation__title {
+  color: $bgColor;
+  font-family: "Roboto-Bold";
+  font-size: 56px;
+}
+
+.transportation__title-input {
+  font-size: 24px;
+  font-weight: 700;
+  color: $bgColor;
+}
+
+.transportation__item {
+  width: 30px;
+  height: 30px;
+  line-height: 32px;
+  background: #ef483e;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 10px 5px 0;
+}
+
+.transportation__text {
+  font-size: 13px;
+  color: $bgColor;
+  max-width: 730px;
+}
+
+.ant-form-item-label > label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 102px!important;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.ant-form-item-label {
+  position: absolute;
+  left: -702px;
+  top: 68px;
+  width: 308px;
+  background: #4b4b4f;
+  align-items: center;
+  height: 102px;
+  font-size: 15px;
+  padding: 20px;
+  color: white;
+}
+
+.transportation__text_rightSelect {
+  position: absolute;
+  top: 41px;
+  left: 178px;
+}
+
+.transportation__text_rightSelect3 {
+  position: absolute;
+  top: 116px;
+  left: 178px;
+}
+
+.transportation__text4 {
+  float: right;
+}
+
+.transportation__notification {
+  color: green;
+  max-width: 730px;
+  background: $bgColorError;
+  height: 32px;
+  border-radius: 2px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+
+  &.transportation__notification_error {
+    color: red;
+  }
+}
+
+.ant-form .ant-form-text {
+  width: 100vw;
+}
+
+.ant-picker {
+  width: 100%;
+  max-width: 730px;
+}
+
+
+@include adaptive(notebook) {
+  .ant-form-item-label {
+    display: none!important;
+  }
+
+  .transportation__title {
+    font-size: 46px;
+  }
+}
+
+@include adaptive(iPads) {
+  .transportation__title {
+    font-size: 36px;
+  }
+
+  .ant-form {
+    padding: 20px 10px 10px 110px !important;
+  }
+
+  .ant-select {
+    max-width: 160px;
+  }
+
+  .ant-input {
+    max-width: 160px;
+  }
+}
+
+@include adaptive(smartfon) {
+  .transportation__title {
+    font-size: 26px;
+  }
+
+  .ant-form {
+    padding: 20px 10px 10px 10px !important;
+  }
+
+  .ant-select {
+    max-width: 160px;
+  }
+
+  .ant-input {
+    max-width: 340px!important;
+  }
+
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    max-width: 340px!important;
+  }
+
+  .ant-select-arrow {
+    right: 18px;
+  }
+
+  .ant-picker {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .transportation__text {
+    max-width: 340px;
+  }
+
+}
