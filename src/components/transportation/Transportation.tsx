@@ -18,15 +18,11 @@ const { Option } = Select;
 const { TextArea } = Input;
 
 export const Transportation: React.FC = () => {
-  const FTL = useSelector((state: DefaultRootState) => {
-    console.log(state);
-    //@ts-ignore
-    return state.state.FTL;
-  });
-  //@ts-ignore
-  const isError = useSelector((state: IRootState) => state.state.isError);
-  //@ts-ignore
-  const isLoading = useSelector((state: IRootState) => state.state.isLoading);
+  const FTL = useSelector<IRootState, string | null>((state) => state.FTL);
+  const isError = useSelector<IRootState, boolean>((state) => state.isError);
+  const isLoading = useSelector<IRootState, boolean>(
+    (state) => state.isLoading
+  );
 
   const dispatch = useDispatch();
 
@@ -65,12 +61,10 @@ export const Transportation: React.FC = () => {
     Number(value) >= 0 && setPrice(Number(value));
   };
 
-  const datePickerHandler = (e: any) => {
-    const date = e._d;
-    const year = new Date(date).getFullYear();
-    const day = new Date(date).getDate();
-    const manth = new Date(date).toLocaleString("en", { month: "long" });
-    setDatePicker(`${day} ${manth} ${year} г.`);
+  const datePickerHandler = (e: moment.Moment | null, dateStr: string) => {
+    if (e) {
+      setDatePicker(dateStr);
+    }
   };
 
   const textareaHandler = ({
